@@ -1,0 +1,71 @@
+/*CSS pour le header*/
+header    
+    {
+        height: 20vh; 
+        display: flex;
+        flex-wrap: nowrap;
+        justify-content: space-between;
+        align-items: center;
+        gap: 15vw;
+    }
+
+
+header img
+    {
+        width: 150px;
+        height: 150px;
+        border-radius: 0.4em;
+    }
+
+header a{
+    padding: 1em;
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    
+}
+
+header a:hover{
+    background-color: rgb(110, 110, 175);
+    border-radius: 0.4em;
+}
+/*fin du CSS pour le header*/
+
+/*CSS pour le footer*/
+footer{
+    text-align: center;
+}
+footer a{
+    text-decoration: none;
+    color: black;
+}
+
+footer a:hover{
+    text-decoration: underline;
+}
+/*fin du CSS pour le footer*/
+
+/*Css du top button*/ 
+#TopButton 
+    {
+        display: none; /*caché si l'on est en haut*/
+        position : fixed;
+        bottom : 20px;
+        right : 30px;
+        border : none;
+        background-color: rgb(110, 110, 175);
+        color : white;
+        cursor : pointer;
+        padding : 15px;
+        border-radius: 10px;
+        font-size: 18px;
+    }            
+
+#titre
+{
+    font-size : 2em;
+    background-color: blanchedalmond;
+    height: 9vh;
+    width: 15vw;
+    border-radius: 5em;
+    opacity: 0.8;
+}

@@ -1,0 +1,125 @@
+
+*{
+    font-family: cursive;
+}
+
+/* On donne les paramètre de la zone parent*/
+body {
+
+    background-image: url("../images/montagnes.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+
+    }
+/*CSS menu principal*/
+#menu_principal {
+    margin :4vh 8vw;
+    display: flex ;
+    background-color: chocolate;
+    height : 100px;
+    width: 800px;
+    opacity : 0.8;
+    border-radius: 2em;
+    }
+
+    #barre_menu_p {
+        display: flex;
+        list-style: none;
+        color: white;
+        /*font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;*/
+        }
+
+        .barre_p {
+            width: 200px;
+            text-align: center;
+        }
+/*Fin menu principal*/
+
+/*Espace personalisation*/
+#personalisation {
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+    grid-auto-rows: 200px;
+}
+
+.barre_s {
+    height: 100px;
+    text-align: center;
+    list-style: none;
+    color: white;
+    /*font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;*/
+}
+#sous_menu {
+    background-color: rgb(17, 68, 68);
+    grid-column: 3;
+    grid-row : 1/3;
+    opacity : 0.7;
+    border-radius: 2em;
+    /*height : 60vh;*/
+}
+#zone_personalisation {
+    /*background-color: cadetblue;*/
+    grid-column: 1/3;
+    grid-row: 1/3;
+}
+
+
+#validation {
+    background-color:rgb(17, 68, 68);
+    grid-column: 2 ;
+    grid-row: 3;
+    text-align: center;
+    opacity : 0.8;
+    border-radius: 2em;
+    
+}
+
+#valide 
+{
+    list-style: none;
+}
+
+.hidden_image
+{
+    display: none;
+    height: 100%;
+    width: auto;
+}
+
+
+#zone_personalisation
+    {
+        display: flex;
+        justify-content: center;
+
+    }
+
+#volume
+    {
+        font-family: cursive;
+    }
+
+#image
+{
+    height: 55vh;
+}
+
+#color
+{
+    height: 55vh;
+}
+
+#check_box
+{
+    /*height: 5vh;*/
+    width: 27vw;
+}
+#volume
+{ 
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    flex-wrap: nowrap;
+}

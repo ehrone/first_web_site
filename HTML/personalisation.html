@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="../CSS/personalisation.css">
+        <link rel="stylesheet" href="../CSS/everywhere.css">
+        <title>Personalisation</title>
+        <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+        <script src="../JS/main.js"></script>
+        <link rel="shortcut icon" href="../images/logo.jpg">
+    </head>
+
+    <body onload="display_perso()">
+
+        <header id="header"></header>
+
+        
+        
+        <div>
+            <div  id="menu_principal">
+                <ul id="barre_menu_p">
+                    <li class="barre_p" id="bois"> <p>Thermos en bois</p></li>
+                    <li class="barre_p" id="métal">Thermos en métal</li>
+                    <li class="barre_p" id="plastique">Thermos en plastique</li>
+                </ul>
+            </div>
+        <template id="choix">
+            <div id="check_box">
+                <input id="" class="option" type="checkbox" name="{{name}}">                    
+                <label for="{{name}}">{{name}}</label>
+            </div>
+        </template>
+
+        <div id="personalisation">
+                <div id="sous_menu">
+                    <ul>
+
+                        <li class="barre_s"> 
+                            <label>Couleur</label>
+                            <input type="color" id="couleur_unie"> 
+                        </li>
+                   
+                        <li class="barre_s" id="volume"> Volume</li>
+           
+                    </ul>
+            </div>
+
+            <!-- The image for the personalisation -->
+            <template id="temp_personalisation">
+                <img id='image' src="images/{{nom}}.jpg" alt="">
+                
+            </template> 
+
+            <div id="zone_personalisation">
+                <div id='color'> </div>
+                <canvas id='canvas' width='200' height='100'> </canvas>
+                
+            </div>
+
+            <div id="validation">
+                <ul>
+                    <li>Quantité(s) : <input type="number" min ="1" max="50" id = "quantite"></li>
+                    <li> <button onclick="window.location.href = 'commande.html'" >Valider la commande</button></li>
+                    <li> <button onclick="add_storage()">Ajouter au panier</button></li>
+                    <li><button type ="reset" >Réinitialisé la personalisation</button></li>            
+            </div>
+
+
+         
+
+        </div>
+      
+        <div id="inserer"></div>
+        <footer id="footer"></footer>
+
+    </body>
+</html>

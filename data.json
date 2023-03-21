@@ -1,0 +1,58 @@
+{
+    "liste_produits" : [
+
+                            {   "nom" : "Thermos_bois",
+                                "materiau" : "Bois", 
+                                "prix":30, 
+                                "image" :"../images/Thermos_bois.jpeg", 
+                                "perso": "../images/Thermos_bois_perso.png",
+                                "description" :"C'est un thermos en bois. Le bois vient de la forêt de Yéti. Personnalisez le !"
+                            } ,
+
+                            {   "nom" : "Thermos_métal",
+                                "materiau" : "Métal",
+                                "prix":30, 
+                                "image" :"../images/Thermos_metal.jpeg", 
+                                "perso": "../images/Thermos_metal_perso.png",
+                                "description" :"C'est un thermos en métal façonné par notre cher Yéti. Personnalisez le !"
+                            } ,
+
+                            {   "nom" : "Thermos_plastique",
+                                "materiau" :"Plastique", 
+                                "prix":30, 
+                                "image" :"../images/Thermos_plastique.jpeg", 
+                                "perso": "../images/Thermos_plastique_perso.png",
+                                "description" : "C'est un thermos en plastique. Personnalisez le !"
+                            }
+                        ]
+    ,
+
+    "personalisation" : [
+                            {
+                                "type" : "couleur_uni",
+                                "prix" : 3,
+                                "description" : "Rendez votre thermos coloré !"
+                            },
+                            {
+                                "type" : "ecriture",
+                                "prix" : 1.5,
+                                "description" : "Ecrivez un mot à graver sur votre thermos."
+                            },
+                            {
+                                "type" : "motif",
+                                "prix" : 5,
+                                "description" : "Rendez votre thermos "
+                            }
+                        ] ,
+                
+    
+    "data_filtre": [
+
+                        ["Tous les matériaux","Bois", "Métal", "Plastique"],
+
+                        ["Tous les volumes","0.25L", "0.5L", "0.75L", "1L"]
+                        
+                    ]
+
+
+}

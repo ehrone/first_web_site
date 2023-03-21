@@ -1,0 +1,25 @@
+*{
+    font-family: cursive;
+}
+#infos_livraison
+{
+    grid-column: 1;
+    background-color: burlywood;
+}
+
+#contenu_panier 
+{
+    grid-column: 2;
+    background-color: cornsilk;
+
+}
+
+.formulaire
+{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+    height: 7vh;
+}

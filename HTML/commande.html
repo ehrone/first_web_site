@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../CSS/commande.css">
+    <link rel="stylesheet" href="../CSS/everywhere.css">
+    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+    <script src="../JS/main.js"></script>
+    <link rel="shortcut icon" href="../images/logo.jpg">
+    <title>commande</title>
+</head>
+
+
+<body id="corps" onload ="show_storage(); recup_panier()">
+
+    <header id="header"></header>
+
+    <div id="infos_livraison">
+        <p>Les champs suivient de * sont obligatoires</p>
+
+        <form action="">
+            <div class="formulaire">
+                <label> Nom : *</label>
+                <input type="text"  required = 'required' >
+            </div>
+        
+            <div class="formulaire">
+                <label > Prénom : *</label>
+                <input type="text" required = 'required' >
+            </div>
+        
+            <div class="formulaire">
+               <label > Email : *</label>
+                <input type="email" required = 'required' >
+            </div>
+        
+            <div class="formulaire">
+                <label > Téléphone : *</label>
+                <input type="tel" required = 'required' >
+            </div>
+        
+            <div class="formulaire">
+                <label > Adresse : *</label>
+                <input type="text" required = 'required' >
+            </div>
+            
+            <div class="formulaire">
+                <label > Ville : *</label>
+                <input type="text" required = 'required' >
+            </div>
+            <div class="formulaire">
+                <label > Code postal : *</label>
+                <input required = 'required' type="text" pattern="[0-9]*" >
+            </div>
+            <div class="formulaire">
+                <label > Pays : *</label>
+                <input type="text" required = 'required' >
+            </div>
+            <div class="formulaire">
+                <label > Date de livraison souhaitée : *</label>           
+                <input type="date" required= 'required' >
+            </div>
+            <div class="formulaire">
+                <label> Renseignement pour le livreur :</label>
+                <input type="text">
+            </div>
+        
+            <div class="formulaire">
+                <button type="submit" > Validez de votre commande </button> 
+            </div>
+        
+            <div class="formulaire">
+                <button type="reset"> Reset </button> 
+            </div>
+        </form>
+    </div>
+
+    <div id="contenu_panier">
+        <!-- the template uses to show our storage-->
+        <template id="template_panier">
+            <div id="{{Nb_produit}}">
+                <p>Produit : {{type}}, Prix : {{prix}}, Quantité : {{quantite}}, Ecriture : {{ecriture}}, Motif : {{motif}}, Couleur :{{couleur}}, Volume : {{volume}} </p>   
+            <button onclick="suppr_commande('{{Nb_produit}}')">X</button>
+            </div>
+        </template>
+
+    </div>
+    <div id="inserer"></div>
+    <footer id="footer"></footer>
+</body>
+</html>

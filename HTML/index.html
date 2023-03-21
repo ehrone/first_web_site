@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="UTF-8">
+         <link rel="stylesheet" href="../CSS/everywhere.css"> 
+        <link rel="stylesheet" href="../CSS/index.css">
+        <title>home</title>
+        <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+        <script src="../JS/main.js"></script> 
+        <link rel="shortcut icon" href="../images/logo.jpg">
+    </head>
+
+    <body id="corps" onload="run_index()">
+
+        <header id="header"></header>
+
+        <section id="contenu">
+
+            <p> Spécifier votre recherche !</p>
+            <!-- template to fill our filter-->
+            <template id="visual_filtre">
+                <div id="check_box">
+                    <input class="option" id="Le nom de l'option"  type="checkbox" name="Le nom du filtre auquel l'option appartient" >
+                    <label for="L'option"> c'est le nom de l'option du filtre</label>
+                </div>
+            </template>
+
+            <!-- on crée notre menu  de recherche-->
+            <div id="HTML_filter"> 
+                <div id='filtre_0'>
+                    <p>Les Matériaux </p>
+                </div>
+                <div id='filtre_1'>
+                    <p>Les Volumes </p>
+                </div>
+            </div>
+
+            <!-- the template udes to create our grid of products-->
+            <template id="template_produit">
+
+                <div id="grid_visual" >
+                    <!-- the image we need to load depending on the product as well as the link to the custom page-->
+                
+                    <a href='' >
+                        <img id='{{produit}}' class='image' src="{{image}}" alt={{produit}}>
+                    </a>
+
+                    <!-- the normaly hidden part, visible with a mouse event-->
+                    <div class='hidden_div' id='{{produit}}'>
+                        <p>{{description_produit}}</p>
+                        <!-- put the image in the url to get it more easily in the custom page-->
+                        <!-- <button onclick="window.location.href = 'personalisation.html?id={{lien_perso}}';"></button>-->
+                    </div>
+                </div>
+            </template>
+
+            <!-- our grid of products -->
+            <div id="grille"></div>
+
+            <div id='inserer'></div>
+
+        </section>
+        <footer id='footer'></footer>
+    </body>
+</html>
